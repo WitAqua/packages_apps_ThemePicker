@@ -34,7 +34,6 @@ import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptio
 import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptionUtil.ThemePickerHomeCustomizationOption.GRID
 import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptionUtil.ThemePickerHomeCustomizationOption.FONT as HOME_FONT
 import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptionUtil.ThemePickerLockCustomizationOption.CLOCK
-import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptionUtil.ThemePickerLockCustomizationOption.FONT as LOCK_FONT
 import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptionUtil.ThemePickerLockCustomizationOption.SHORTCUTS
 import com.android.wallpaper.picker.common.preview.ui.viewmodel.WorkspacePreviewScreen
 import com.android.wallpaper.picker.customization.ui.view.ApplyButton
@@ -270,15 +269,6 @@ constructor(
             }
         }
 
-    val onCustomizeLockFontClicked: Flow<(() -> Unit)?> =
-        selectedOption.map {
-            if (it == null) {
-                { defaultCustomizationOptionsViewModel.selectOption(LOCK_FONT) }
-            } else {
-                null
-            }
-        }
-
     val onCustomizeHomeFontClicked: Flow<(() -> Unit)?> =
         selectedOption.map {
             if (it == null) {
@@ -296,7 +286,7 @@ constructor(
                     CLOCK -> clockPickerViewModel.onApply
                     SHORTCUTS -> keyguardQuickAffordancePickerViewModel2.onApply
                     GRID -> gridPickerViewModel.onApply
-                    LOCK_FONT, HOME_FONT -> fontPickerViewModel.onApply
+                    HOME_FONT -> fontPickerViewModel.onApply
                     APP_ICONS ->
                         if (BaseFlags.get(appContext).isExtendibleThemeManager()) {
                             appIconPickerViewModel.iconStyleAndShapeOnApply
