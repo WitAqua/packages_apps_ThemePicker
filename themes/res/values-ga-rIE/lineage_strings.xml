@@ -19,4 +19,20 @@
     <string name="bundle1_color_name">Carbón</string>
     <string name="bundle2_color_name">Páipéar</string>
     <string name="bundle3_color_name">Ghrian</string>
+    <string name="bue_color_name">Labhandair</string>
+    <string name="red_color_name">Caor</string>
+    <string name="wht_color_name">Ceo</string>
+    <string name="indigo_color_name">Indeagó</string>
+    <string name="iris_color_name">Iris</string>
+    <string name="jade_color_name">Séadghlas</string>
+    <string name="lemongrass_color_name">Féar líomóide</string>
+    <string name="moonstone_color_name">Cloch na Gealaí</string>
+    <string name="obsidian_color_name">Obsaidian</string>
+    <string name="peony_color_name">Piaine</string>
+    <string name="porcelain_color_name">Poirceallán</string>
+    <string name="fruit1_color_name">Paileéad dhá dhath — buí agus dearg</string>
+    <string name="fruit2_color_name">Paileéad dhá dhath: glas agus oráiste</string>
+    <string name="fruit3_color_name">Pailéad dhá dhath — gorm agus glas</string>
+    <string name="fruit4_color_name">Paileéad dhá dhath de chorcra éadrom agus gorm</string>
+    <string name="fruit5_color_name">Pailéad dhá dhath: bándearg agus indeagó</string>
 </resources>
