@@ -76,6 +76,7 @@ class ClockRegistryProvider(
                 "com.android.systemui.clocks.numoverlap",
                 "com.android.systemui.clocks.weather",
                 "com.libremobileos.clock",
+                "org.witaqua.clockplugin",
             ),
             PluginEnabler.AlwaysEnabled(),
             Executors.newSingleThreadExecutor(),
